@@ -3,8 +3,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Toast = () => {
-  const notifyError = () => {
-    toast.error("Done!", {
+  const notifySuccess = () => {
+    toast.success("Done!", {
       position: "top-right",
       autoClose: 1000,
       hideProgressBar: false,
@@ -16,7 +16,7 @@ const Toast = () => {
 
   return (
     <div>
-      <button onClick={notifyError}>No</button>
+      <button onClick={notifySuccess} className="w-full border p-2 rounded-lg bg-gray-200">Submit</button>
       <ToastContainer />
     </div>
   );

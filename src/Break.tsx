@@ -44,7 +44,7 @@ const InputBreak: React.FC = () => {
       </Radio.Group>
 
       <div className="pt-4">
-        <button>No</button>
+        <Toast/>
       </div>
     </div>
   );
