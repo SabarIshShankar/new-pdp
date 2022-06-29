@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "antd": "^4.19.5",
+    "glamor": "2.20.40",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-multi-carousel": "2.8.2",
+    "react-toastify": "9.0.5",
     "react-toggle-display": "2.2.1"
   },
   "devDependencies": {

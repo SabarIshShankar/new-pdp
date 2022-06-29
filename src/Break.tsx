@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import type { RadioChangeEvent } from "antd";
-import { Radio, Button } from "antd";
+import { Radio } from "antd";
+import Toast from "./components/toast";
 
 const InputBreak: React.FC = () => {
   const [value, setValue] = useState(1);
@@ -43,9 +44,7 @@ const InputBreak: React.FC = () => {
       </Radio.Group>
 
       <div className="pt-4">
-        <Button type="default" className="w-full">
-          Submit
-        </Button>
+        <Toast />
       </div>
     </div>
   );
