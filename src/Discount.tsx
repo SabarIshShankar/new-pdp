@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 const Text = () => (
   <div className="bg-gray-100 text-xl w-full">
-    <div className="text-lg my-2">
+    <div className="text-lg my-4">
       <button className="w-full h-12 px-6 transition-colors duration-150 bg-yellow-g rounded-lg focus:shadow-outline">
         GLIMPSE-KPI
       </button>
@@ -22,7 +22,7 @@ function Discount() {
   return (
     <div>
       <button
-        className=" autolayout w-full p-2 mt-8 bg-glimpse-blue content-center spread-8 text-white flex"
+        className=" autolayout w-full p-2 my-4 bg-glimpse-blue content-center spread-8 text-white flex"
         onClick={onClick}
       >
         <EyeOutlined />

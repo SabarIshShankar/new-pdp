@@ -1,11 +1,12 @@
-import { Button, Carousel } from "antd";
+import { Carousel } from "antd";
 import themeConfig from "./utils/utils";
-import { LeftOutlined, CopyOutlined, StarFilled } from "@ant-design/icons";
 import "./styles.css";
 import Header from "./Header";
 import Discount from "./Discount";
 import CTA from "./Cta";
 import Reviews from "./Reviews";
+import MoreImages from "./More";
+import InputBreak from "./Break";
 
 function App() {
   return (
@@ -68,8 +69,8 @@ function App() {
 
         <div className="flex justify-between">
           <div className="mb-1 text-xl font-medium flex">
-            $330
-            <span className="line-through px-2 text-gray-500">$350</span>
+            $330.00
+            <span className="line-through px-2 text-gray-500">$350.00</span>
           </div>
 
           <div className="flex p-1 rounded-lg">
@@ -154,8 +155,37 @@ function App() {
         </div>
         <Reviews />
         <div className="border-b mt-3"></div>
+        <InputBreak />
+        <h1 className="text-lg text-gray-500 py-2">MORE ABOUT THE PRODUCT</h1>
 
-        <h1 className="text-lg text-gray-500 py-2">MORE PRODUCTS</h1>
+        <div className="mx-1">
+          <img
+            loading="lazy"
+            alt="product"
+            className="h-60 py-1 w-full object-cover plain-shadow rounded-xl"
+            src="https://cdn.shopify.com/s/files/1/0064/3262/0633/products/Midnight-Blue_Cotton-Napper_2_800x.jpg?v=1642093943"
+          />
+          <img
+            loading="lazy"
+            alt="product"
+            className="h-60 py-1 w-full object-cover plain-shadow rounded-xl"
+            src="https://i.pinimg.com/originals/21/98/12/2198125fda9498f26d5ca4202043042d.jpg"
+          />
+          <img
+            loading="lazy"
+            alt="product"
+            className="h-60 py-1 w-full object-cover plain-shadow rounded-xl"
+            src="https://cdn.thewirecutter.com/wp-content/media/2021/09/weightedblankets-2048px-0677.jpg"
+          />
+          <img
+            loading="lazy"
+            alt="product"
+            className="h-60 py-1 w-full object-cover plain-shadow rounded-xl"
+            src="https://sleepopolis.com/wp-content/uploads/2021/11/bearaby_feel-2-400x225.jpg"
+          />
+        </div>
+        <img className="m-5 h-16" src="./arrow.png" alt="end" />
+
         <CTA />
       </div>
     </div>

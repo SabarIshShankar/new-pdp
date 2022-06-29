@@ -22,7 +22,7 @@ export default function Header() {
       </div>
       <div className="flex underlined mb-5">
         <div className="text-sm">Home</div>
-        <span className="px-3">{'>'} </span>
+        <span className="px-1">{">"} </span>
         <div className="text-sm">Product Name</div>
       </div>
     </div>

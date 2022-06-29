@@ -9,7 +9,7 @@ export default function CTA() {
         <div className="flex fixed1 bg-white shadow-top pt-3 max-w-2xl mx-auto px-2  lg:max-w-3xl lg:px-8">
           <button
             type="button"
-            className="mx-1 w-1/2 text-sm text-white flex items-center justify-center h-12 rounded-lg bg-red-700 outline-none focus:outline-none"
+            className="mx-1 w-1/2 text-sm border-gray text-white flex items-center justify-center h-12 rounded-lg bg-red-700 outline-none focus:outline-none"
           >
             Visit Shop
             <ShoppingOutlined />
