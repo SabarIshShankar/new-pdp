@@ -8,7 +8,7 @@ const AboutBrand: React.FC = () => {
      
 
 
-  	<img className="w-full h-36" src="https://media-exp1.licdn.com/dms/image/C561BAQHwlKS8yZAPrw/company-background_10000/0/1587846535448?e=2147483647&v=beta&t=Kleaoso4-IRW47zOMu_r4XDPpVKyAavf3ce7Rmz7FkU" alt="head" />
+  	<img className="object-cover w-full h-36" src="https://media-exp1.licdn.com/dms/image/C561BAQHwlKS8yZAPrw/company-background_10000/0/1587846535448?e=2147483647&v=beta&t=Kleaoso4-IRW47zOMu_r4XDPpVKyAavf3ce7Rmz7FkU" alt="head" />
     <div className="flex ml-3 -mt-8">
         <img className="rounded-full border-solid border-white border-2 -mt-3 h-16" src="https://pbs.twimg.com/profile_images/1270398175178874880/OgLcWk8w_400x400.jpg"/>		
     </div>

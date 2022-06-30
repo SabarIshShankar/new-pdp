@@ -1,4 +1,5 @@
 import { Carousel } from "antd";
+import React, {useState} from 'react';
 import themeConfig from "./utils/utils";
 import "./styles.css";
 import Header from "./Header";
@@ -8,9 +9,19 @@ import Reviews from "./Reviews";
 import MoreImages from "./More";
 import InputBreak from "./Break";
 import AboutBrand from './About';
-import {ArrowDownOutlined} from '@ant-design/icons'
+import {ArrowDownOutlined, ShoppingOutlined, HeartOutlined} from '@ant-design/icons'
+
 
 function App() {
+  const [isModalVisible, setIsModalVisible] = useState(false)
+  const showModal = () => {
+    setIsModalVisible(true)
+  }
+
+  const handleCancel = () => {
+    setIsModalVisible(false)
+  }
+
   return (
     <div className="bg-white App font mb-24 text-black">
       <div className="max-w-2xl mx-auto py-5 px-4 sm:py-5u sm:px-0 lg:max-w-3xl lg:px-8">
@@ -189,8 +200,32 @@ function App() {
        
 
         <AboutBrand/>
+
+
+
+        
+
+
  <div className="flex p-2 autolayout"> <ArrowDownOutlined /> <p className="s"></p>Get yours before time runs out</div>
-        <CTA />
+        <div className="bg-white App mb-24 shadow-t">
+      <div className="max-w-2xl mx-auto py-5 px-2 sm:py-5 sm:px-3 lg:max-w-3xl lg:px-8">
+        <div className="flex fixed1 bg-white shadow-md pt-3 max-w-2xl mx-auto px-2  lg:max-w-3xl lg:px-8">
+          <button
+            type="button"
+            className="mx-1 w-1/2 text-sm pr-2 border-gray text-white flex items-center justify-center h-12 rounded-2xl bg-black outline-none focus:outline-none"
+          >
+            Visit Shop
+            <ShoppingOutlined />
+          </button>
+          <button
+
+          className="mx-2 w-1/2 pr-2 text-sm flex h-12 items-center justify-center rounded-2xl bg-save text-white outline-none focus:outline-none">
+            Save for Later
+            <HeartOutlined />
+          </button>
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   );
