@@ -7,6 +7,8 @@ import CTA from "./Cta";
 import Reviews from "./Reviews";
 import MoreImages from "./More";
 import InputBreak from "./Break";
+import AboutBrand from './About';
+import {ArrowDownOutlined} from '@ant-design/icons'
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
       <div className="max-w-2xl mx-auto py-5 px-4 sm:py-5u sm:px-0 lg:max-w-3xl lg:px-8">
         <Header />
 
-        <div className="container1 w-full aspect-w-1 aspect-h-1 bg-gray-100 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+        <div className="container1 w-full aspect-w-1 aspect-h-1 bg-gray-100 rounded-2xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
           <div className="overflow-hidden relative">
             <Carousel autoplay>
               <div className="">
@@ -23,7 +25,7 @@ function App() {
                     loading="lazy"
                     alt="product"
                     className="h-56 w-full object-cover"
-                    src="https://cdn.shopify.com/s/files/1/0026/5178/3237/products/charcoalBB-4_1080x.png?v=1640930452"
+                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/bearaby-velvet-weighted-blanket-o-1572461899.jpg?crop=1.00xw:0.504xh;0,0.176xh&resize=1200:*"
                   />
                 </div>
               </div>
@@ -43,7 +45,7 @@ function App() {
                     loading="lazy"
                     alt="product"
                     className="h-56 w-full object-cover"
-                    src="https://cdn.shopify.com/s/files/1/0026/5178/3237/products/charcoalBB-4_1080x.png?v=1640930452"
+                    src="https://weightedjournal.com/wp-content/uploads/2020/04/Napper-weighed-blanket.jpg"
                   />
                 </div>
               </div>
@@ -59,7 +61,7 @@ function App() {
               </div>
             </Carousel>
             <div className="absolute py-2.5 w-fit top-0 inset-x-0  text-white text-xs text-center leading-4">
-              <div className="bg-red-700 mx-2 text-white rounded-full px-2 py-1">
+              <div className="bg-yellow-600 mx-2 text-white rounded-full px-2 py-1">
                 BESTSELLER
               </div>
             </div>
@@ -73,7 +75,7 @@ function App() {
             <span className="line-through px-2 text-gray-500">$350.00</span>
           </div>
 
-          <div className="flex p-1 rounded-lg">
+          <div className="flex p-1 rounded-2xl">
             <p className="text-sm px-2">4.9</p>
 
             <svg
@@ -93,7 +95,7 @@ function App() {
         </div>
 
         <div className="flex">
-          <div className="bg-red-700 text-white rounded-full px-2 py-1">
+          <div className="bg-yellow-600 text-white rounded-full text-xs px-3 py-2">
             20% OFF
           </div>
         </div>
@@ -136,7 +138,7 @@ function App() {
         <div className="border-b pt-2"></div>
 
         <h1 className="text-lg text-gray-500 pt-2">REVIEWS</h1>
-        <div className="flex rounded-lg">
+        <div className="flex rounded-2xl">
           <p className="text-sm px-2">4.9</p>
 
           <svg
@@ -184,8 +186,10 @@ function App() {
             src="https://sleepopolis.com/wp-content/uploads/2021/11/bearaby_feel-2-400x225.jpg"
           />
         </div>
-        <img className="m-5 h-16" src="./arrow.png" alt="end" />
+       
 
+        <AboutBrand/>
+ <div className="flex p-2 autolayout"> <ArrowDownOutlined /> <p className="s"></p>Get yours before time runs out</div>
         <CTA />
       </div>
     </div>

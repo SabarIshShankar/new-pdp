@@ -40,11 +40,11 @@ export default function Reviews() {
         >
           <div className="tracking-tight m-1">
             <div className="w-full mr-2">
-              <div className="border border-gray-200 rounded-lg">
+              <div className="border border-gray-200 rounded-2xl">
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
 
-                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-red-700">
+                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-yellow-600">
                     <StarFilled />
                     <StarFilled />
                     <StarFilled />
@@ -62,11 +62,11 @@ export default function Reviews() {
           </div>
           <div className="tracking-tight m-1">
             <div className="w-full mr-2">
-              <div className="border border-gray-200 rounded-lg">
+              <div className="border border-gray-200 rounded-2xl">
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
 
-                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-red-700">
+                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-yellow-600">
                     <StarFilled />
                     <StarFilled />
                     <StarFilled />
@@ -84,11 +84,11 @@ export default function Reviews() {
           </div>
           <div className="tracking-tight m-1">
             <div className="w-full mr-2">
-              <div className="border border-gray-200 rounded-lg">
+              <div className="border border-gray-200 rounded-2xl">
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
 
-                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-red-700">
+                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-yellow-600">
                     <StarFilled />
                     <StarFilled />
                     <StarFilled />
@@ -106,11 +106,11 @@ export default function Reviews() {
           </div>
           <div className="tracking-tight m-1">
             <div className="w-full mr-2">
-              <div className="border border-gray-200 rounded-lg">
+              <div className="border border-gray-200 rounded-2xl">
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
 
-                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-red-700">
+                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-yellow-600">
                     <StarFilled />
                     <StarFilled />
                     <StarFilled />
