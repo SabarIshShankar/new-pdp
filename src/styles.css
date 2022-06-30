@@ -45,7 +45,6 @@
 
 .fixed-modal {
   position: fixed;
-  width: auto;
   background-color: white;
   bottom: 0px;
   left: 0px;
@@ -85,4 +84,9 @@
 .plain-shadow {
   filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.15));
   border-radius: 10px;
+}
+
+.rounded-2xl-top{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }

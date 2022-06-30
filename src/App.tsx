@@ -7,7 +7,7 @@ import Discount from "./Discount";
 import Reviews from "./Reviews";
 import InputBreak from "./Break";
 import AboutBrand from './About';
-import {ArrowDownOutlined, ShoppingOutlined, HeartOutlined} from '@ant-design/icons'
+import {ArrowDownOutlined, ShoppingOutlined, HeartOutlined, CloseOutlined} from '@ant-design/icons'
 import { Button, Drawer } from 'antd';
 import CustomModal from "./custom";
 
@@ -275,12 +275,12 @@ A healthier choice for your home and the environment: organic cotton uses up to 
         </button>
       </div>
       <CustomModal visible={showModal} onClose={() => setShowModal(false)}>
-        <div className="bg-white w-96 p-5 rounded-2xl fixed-modal">
+        <div className="bg-white w-full p-5 rounded-2xl-top fixed-modal max-w-2xl mx-auto py-5 px-5 sm:py-5 sm:px-3 lg:max-w-3xl lg:px-8">
           <div className="flex justify-between">
             <h1 className="text-2xl">
             Specs and Information
           </h1>
-          <button onClick={() => setShowModal(false)}>X</button></div>
+          <button onClick={() => setShowModal(false)} className="text-2xl"><CloseOutlined/></button></div>
           
           <p className="py-1 text-gray-500">
           This buttery soft and breathable organic cotton weighted blanket is ideal for all seasons.
