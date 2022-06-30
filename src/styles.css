@@ -43,6 +43,27 @@
   margin-bottom: 0px;
 }
 
+.fixed-modal {
+  position: fixed;
+  width: auto;
+  background-color: white;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  justify-content: center;
+}
+
+
+.fixed-top {
+  position: fixed;
+  height: 70px;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin-top: 0px;
+}
 .bg-save {
   background: rgb(32, 32, 55);
   background: linear-gradient(
@@ -55,6 +76,7 @@
     0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
 }
+
 
 .border-gray {
   border: 1px solid rgba(255, 255, 255, 0.32);

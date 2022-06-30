@@ -1,20 +1,41 @@
 import { Carousel } from "antd";
+import React, {useState, Component} from 'react';
 import themeConfig from "./utils/utils";
 import "./styles.css";
 import Header from "./Header";
 import Discount from "./Discount";
-import CTA from "./Cta";
 import Reviews from "./Reviews";
-import MoreImages from "./More";
 import InputBreak from "./Break";
 import AboutBrand from './About';
-import {ArrowDownOutlined} from '@ant-design/icons'
+import {ArrowDownOutlined, ShoppingOutlined, HeartOutlined} from '@ant-design/icons'
+import { Button, Drawer } from 'antd';
+import CustomModal from "./custom";
 
-function App() {
+const App: React.FC = () => {
+
+  const [showModal, setShowModal] = useState(false);
+
+  const [visible, setVisible] = useState(false);
+  
+
+  const showDrawer = () => {
+    setVisible(true);
+  };
+
+  const onClose = () => {
+    setVisible(false);
+  };
+
   return (
-    <div className="bg-white App font mb-24 text-black">
+    <div className="bg-white App font mb-24 text-black mt-16">
       <div className="max-w-2xl mx-auto py-5 px-4 sm:py-5u sm:px-0 lg:max-w-3xl lg:px-8">
-        <Header />
+        
+      <div className="flex underlined mb-5 mt-2">
+        <div className="text-sm">Home</div>
+        <span className="px-1">{">"} </span>
+        <div className="text-sm">Product Name</div>
+  </div>
+
 
         <div className="container1 w-full aspect-w-1 aspect-h-1 bg-gray-100 rounded-2xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
           <div className="overflow-hidden relative">
@@ -125,7 +146,7 @@ function App() {
 
         <div className="border-b"></div>
 
-        <h1 className="text-lg text-gray-500 py-2">DESCRIPTION</h1>
+        <h1 className="text-lg text-gray-500 py-2">Description</h1>
 
         <p className="text-sm pt-2">
           With a thinner profile than a traditional comforter, this perfectly
@@ -133,11 +154,37 @@ function App() {
           round. The naturally thermal-regulating bamboo viscose fabric and fill
           is perfect for hot sleepers, while still providing adequate warmth in
           the cooler months.
+         
         </p>
+
+
+
+        
+      <div style={{
+      borderRadius: 30,
+    }}>
+      <Drawer title="Basic Drawer" style={{fontFamily: 'EV' }}className="rounded-2xl" placement="bottom" onClose={onClose} visible={visible}>
+        <p>This buttery soft and breathable organic cotton weighted blanket is ideal for all seasons.
+          Our organic long-staple cotton is pre-washed for buttery softness – just like your favorite T-shirt.
+
+MADE IN GREEN by OEKO-TEX® and Fairtrade International certified
+
+10 lbs Cotton Napper: 100% Organic cotton
+15, 20 & 25 lbs Cotton Napper: 95% Organic cotton, 5% Spandex
+
+A healthier choice for your home and the environment: organic cotton uses up to 90% less water than conventional farming methods and is free from harmful chemicals, pesticides, synthetics, or artificial softeners.</p>
+      </Drawer>
+      </div>
+
+
+
+      
+      
+        
 
         <div className="border-b pt-2"></div>
 
-        <h1 className="text-lg text-gray-500 pt-2">REVIEWS</h1>
+        <h1 className="text-lg text-gray-500 pt-2">Reviews</h1>
         <div className="flex rounded-2xl">
           <p className="text-sm px-2">4.9</p>
 
@@ -158,7 +205,7 @@ function App() {
         <Reviews />
         <div className="border-b mt-3"></div>
         <InputBreak />
-        <h1 className="text-lg text-gray-500 py-2">MORE ABOUT THE PRODUCT</h1>
+        <h1 className="text-lg text-gray-500 py-2">Highlights</h1>
 
         <div className="mx-1">
           <img
@@ -189,9 +236,70 @@ function App() {
        
 
         <AboutBrand/>
+
+
+
+        
+
+        <Header />
  <div className="flex p-2 autolayout"> <ArrowDownOutlined /> <p className="s"></p>Get yours before time runs out</div>
-        <CTA />
+        <div className="bg-white App mb-24 shadow-t">
+      <div className="max-w-2xl mx-auto py-5 px-2 sm:py-5 sm:px-3 lg:max-w-3xl lg:px-8">
+        <div className="flex fixed1 bg-white shadow-md pt-3 max-w-2xl mx-auto px-2  lg:max-w-3xl lg:px-8">
+          <button
+            type="button"
+            className="mx-1 w-1/2 text-sm pr-2 border-gray text-white flex items-center justify-center h-12 rounded-2xl bg-black outline-none focus:outline-none"
+          >
+            Visit Shop
+            <ShoppingOutlined />
+          </button>
+          <button
+
+          className="mx-2 w-1/2 pr-2 text-sm flex h-12 items-center justify-center rounded-2xl bg-save text-white outline-none focus:outline-none">
+            Save for Later
+            <HeartOutlined />
+          </button>
+        </div>
       </div>
+
+      <button className="bg-white py-2 px-5 bg-blue-500 text-white" onClick={showDrawer}>
+        Read more 1
+      </button>
+
+      <div className="flex items-center justify-center">
+        <button
+          className="py-2 px-5 bg-blue-500 text-white"
+          onClick={() => setShowModal(true)}
+        >
+          Read more 2
+        </button>
+      </div>
+      <CustomModal visible={showModal} onClose={() => setShowModal(false)}>
+        <div className="bg-white w-96 p-5 rounded-2xl fixed-modal">
+          <div className="flex justify-between">
+            <h1 className="text-2xl">
+            Specs and Information
+          </h1>
+          <button onClick={() => setShowModal(false)}>X</button></div>
+          
+          <p className="py-1 text-gray-500">
+          This buttery soft and breathable organic cotton weighted blanket is ideal for all seasons.
+          Our organic long-staple cotton is pre-washed for buttery softness – just like your favorite T-shirt.
+
+MADE IN GREEN by OEKO-TEX® and Fairtrade International certified
+
+10 lbs Cotton Napper: 100% Organic cotton
+15, 20 & 25 lbs Cotton Napper: 95% Organic cotton, 5% Spandex
+
+A healthier choice for your home and the environment: organic cotton uses up to 90% less water than conventional farming methods and is free from harmful chemicals, pesticides, synthetics, or artificial softeners.
+          </p>
+        </div>
+      </CustomModal>
+
+    
+    </div>
+      </div>
+      
     </div>
   );
 }

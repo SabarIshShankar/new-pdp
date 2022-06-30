@@ -8,7 +8,7 @@ import {
 
 export default function Header() {
   return (
-    <div className="header">
+    <div className="header shadow-sm bg-white fixed-top max-w-2xl mx-auto py-5 px-5 sm:py-5 sm:px-3 lg:max-w-3xl lg:px-8">
       <div className="flex text-xl justify-between mb-3">
         <h1 className="tracking-tight text-2xl">glimpse</h1>
         <div className="flex text-2xl">
@@ -20,11 +20,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="flex underlined mb-5">
-        <div className="text-sm">Home</div>
-        <span className="px-1">{">"} </span>
-        <div className="text-sm">Product Name</div>
-      </div>
+      {/**/}
     </div>
   );
 }
