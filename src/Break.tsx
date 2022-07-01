@@ -23,7 +23,7 @@ const InputBreak: React.FC = () => {
   );
 
   return (
-    <div className="border-2 border-red-400 my-8 rounded-xl p-5 spread-8">
+    <div className="border-2 border-red-400 my-8 rounded-2xl p-5 spread-8">
       <h1 className="text-lg">Have you tried this product during your stay?</h1>
       <Radio.Group onChange={onChange} value={value}>
         <Radio value={1}>Yes</Radio>
@@ -44,7 +44,7 @@ const InputBreak: React.FC = () => {
       </Radio.Group>
 
       <div className="pt-4">
-        <button>No</button>
+        <Toast/>
       </div>
     </div>
   );

@@ -40,4 +40,7 @@ export default defineConfig({
           "tailwind.config.js": path.resolve(__dirname, "tailwind.config.js"),
       },
   },
+  server: {
+    host: true
+  }
 });
