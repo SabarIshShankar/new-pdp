@@ -10,11 +10,7 @@
   font-family: 'EV', sans-serif;
 }
 
-.bg-glimpse-blue {
-  background: #202037;
-  border: 1.53077px solid rgba(255, 255, 255, 0.32);
-  border-radius: 10px;
-}
+
 
 .bg-yellow-g {
   background: #ffffff;
@@ -92,3 +88,21 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
+
+.bg-glimpse {
+  background: #202037;
+  border: 1.53077px solid rgba(255, 255, 255, 0.32);
+  border-radius: 10px;
+}
+
+
+body {
+  background-image: url("");
+  background-color: #cccccc;
+  background-position: center center;
+  background-repeat: no-repeat, repeat;
+  position: relative;
+  background-attachment: fixed;
+  background-size: 430px;
+  z-index:-1
+ }

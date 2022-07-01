@@ -1,24 +1,28 @@
 import { Carousel } from "antd";
-import React, {useState, Component} from 'react';
+import React, { useState, Component } from "react";
 import themeConfig from "./utils/utils";
 import "./styles.css";
 import Header from "./Header";
 import Discount from "./Discount";
 import Reviews from "./Reviews";
 import InputBreak from "./Break";
-import AboutBrand from './About';
-import {ArrowDownOutlined, ShoppingOutlined, HeartOutlined, CloseOutlined} from '@ant-design/icons'
-import { Button, Drawer } from 'antd';
+import AboutBrand from "./About";
+import {
+  ArrowDownOutlined,
+  ShoppingOutlined,
+  HeartOutlined,
+  CloseOutlined,
+} from "@ant-design/icons";
+import { Button, Drawer } from "antd";
 import CustomModal from "./custom";
 import CTA from "./Cta";
 import { left } from "glamor";
+import BG from './bg'
 
 const App: React.FC = () => {
-
   const [showModal, setShowModal] = useState(false);
 
   const [visible, setVisible] = useState(false);
-  
 
   const showDrawer = () => {
     setVisible(true);
@@ -29,15 +33,13 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-white App font mb-24 text-black mt-16">
-      <div className="max-w-2xl mx-auto py-5 px-4 sm:py-5u sm:px-0 lg:max-w-3xl lg:px-8">
-        
-      {/*<div className="flex underlined mb-5 mt-2">
+    <div className="App font mb-24 text-black mt-16">
+      <div className="max-w-2xl mx-auto py-5 px-4 sm:py-5u sm:px-0 lg:max-w-xl lg:px-8 ">
+        {/*<div className="flex underlined mb-5 mt-2">
         <div className="text-sm">Home</div>
         <span className="px-1">{">"} </span>
         <div className="text-sm">Product Name</div>
   </div>*/}
-
 
         <div className="container1 w-full aspect-w-1 aspect-h-1 bg-gray-100 rounded-2xl overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
           <div className="relative">
@@ -84,7 +86,7 @@ const App: React.FC = () => {
               </div>
             </Carousel>
             <div className="absolute py-2.5 w-fit top-0 inset-x-0  text-white text-xs text-center leading-4">
-              <div className="bg-orange-600 mx-2 text-white rounded-full px-2 py-1">
+              <div className="bg-yellow-600 mx-2 text-white rounded-full px-2 py-1">
                 BESTSELLER
               </div>
             </div>
@@ -118,7 +120,7 @@ const App: React.FC = () => {
         </div>
 
         <div className="flex">
-          <div className="bg-orange-600 text-white rounded-full text-xs px-3 py-2">
+          <div className="bg-yellow-600 text-white rounded-full text-xs px-3 py-2">
             20% OFF
           </div>
         </div>
@@ -150,29 +152,25 @@ const App: React.FC = () => {
 
         <h1 className="text-lg text-gray-500 py-2">Description</h1>
 
-        <p className="text-sm pt-2">
+        <p className="text-sm pt-2 text-gray-500">
           With a thinner profile than a traditional comforter, this perfectly
           soft & breathable quilted blanket will keep you comfortable all year
           round. The naturally thermal-regulating bamboo viscose fabric and fill
           is perfect for hot sleepers, while still providing adequate warmth in
           the cooler months.
           <div className="flex">
-        <button
-          className="text-orange-600"
-          onClick={() => setShowModal(true)}
-        >
-          Read more
-        </button>
-      </div>
+            <button className="" onClick={() => setShowModal(true)}>
+              Read more
+            </button>
+          </div>
         </p>
 
-
-
-        
-      <div style={{
-      borderRadius: 30,
-    }}>
-      <Drawer title="Basic Drawer" style={{fontFamily: 'Gantari' }}className="rounded-2xl" placement="bottom" onClose={onClose} visible={visible}>
+        <div
+          style={{
+            borderRadius: 30,
+          }}
+        >
+          {/*<Drawer title="Basic Drawer" style={{fontFamily: 'Gantari' }}className="rounded-2xl" placement="bottom" onClose={onClose} visible={visible}>
         <p>This buttery soft and breathable organic cotton weighted blanket is ideal for all seasons.
           Our organic long-staple cotton is pre-washed for buttery softness – just like your favorite T-shirt.
 
@@ -182,14 +180,8 @@ MADE IN GREEN by OEKO-TEX® and Fairtrade International certified
 15, 20 & 25 lbs Cotton Napper: 95% Organic cotton, 5% Spandex
 
 A healthier choice for your home and the environment: organic cotton uses up to 90% less water than conventional farming methods and is free from harmful chemicals, pesticides, synthetics, or artificial softeners.</p>
-      </Drawer>
-      </div>
-
-
-
-      
-      
-        
+  </Drawer>*/}
+        </div>
 
         <div className="border-b pt-2"></div>
 
@@ -242,52 +234,55 @@ A healthier choice for your home and the environment: organic cotton uses up to 
             src="https://sleepopolis.com/wp-content/uploads/2021/11/bearaby_feel-2-400x225.jpg"
           />
         </div>
-       
 
-        <AboutBrand/>
-
-
-
-        
+        <AboutBrand />
 
         <Header />
- <div className="flex p-2 autolayout"> <ArrowDownOutlined /> <p className="s"></p>Get yours before time runs out</div>
-        <div className="bg-white App mb-24 shadow-t">
-      
-<CTA/>
-      <button className="bg-blue-500 py-2 px-5 bg-blue-500 text-white" onClick={showDrawer}>
-        Read more 1
-      </button>
-
-      
-      <CustomModal visible={showModal} onClose={() => setShowModal(false)}>
-        <div className="bg-white w-full p-5 rounded-2xl-top fixed-modal max-w-2xl mx-auto py-5 px-5 sm:py-5 sm:px-3 lg:max-w-3xl lg:px-8">
-          <div className="flex justify-between">
-            <h1 className="text-2xl">
-            Specs and Information
-          </h1>
-          <button onClick={() => setShowModal(false)} className="text-2xl"><CloseOutlined/></button></div>
-          
-          <p className="py-1 text-gray-500">
-          This buttery soft and breathable organic cotton weighted blanket is ideal for all seasons.
-          Our organic long-staple cotton is pre-washed for buttery softness – just like your favorite T-shirt.
-
-MADE IN GREEN by OEKO-TEX® and Fairtrade International certified
-
-10 lbs Cotton Napper: 100% Organic cotton
-15, 20 & 25 lbs Cotton Napper: 95% Organic cotton, 5% Spandex
-
-A healthier choice for your home and the environment: organic cotton uses up to 90% less water than conventional farming methods and is free from harmful chemicals, pesticides, synthetics, or artificial softeners.
-          </p>
+        <div className="flex p-2 autolayout">
+          {" "}
+          <ArrowDownOutlined /> <p className="s"></p>Get yours before time runs
+          out
         </div>
-      </CustomModal>
+        <div className="bg-white App mb-24 shadow-t">
+          <CTA />
+          <button
+            className="bg-blue-500 py-2 px-5 bg-blue-500 text-white"
+            onClick={showDrawer}
+          >
+            Read more 1
+          </button>
 
-    
-    </div>
+          <CustomModal visible={showModal} onClose={() => setShowModal(false)}>
+            <div className="bg-white w-full p-5 rounded-2xl-top fixed-modal max-w-2xl mx-auto py-5 px-5 sm:py-5 sm:px-3 lg:max-w-3xl lg:px-8">
+              <div className="flex justify-between">
+                <h1 className="text-2xl">Specs and Information</h1>
+                <button
+                  onClick={() => setShowModal(false)}
+                  className="text-2xl"
+                >
+                  <CloseOutlined />
+                </button>
+              </div>
+
+              <p className="py-1 text-gray-500">
+                This buttery soft and breathable organic cotton weighted blanket
+                is ideal for all seasons. Our organic long-staple cotton is
+                pre-washed for buttery softness – just like your favorite
+                T-shirt. MADE IN GREEN by OEKO-TEX® and Fairtrade International
+                certified 10 lbs Cotton Napper: 100% Organic cotton 15, 20 & 25
+                lbs Cotton Napper: 95% Organic cotton, 5% Spandex A healthier
+                choice for your home and the environment: organic cotton uses up
+                to 90% less water than conventional farming methods and is free
+                from harmful chemicals, pesticides, synthetics, or artificial
+                softeners.
+              </p>
+            </div>
+          </CustomModal>
+          <BG/>
+        </div>
       </div>
-      
     </div>
   );
-}
+};
 
 export default App;
