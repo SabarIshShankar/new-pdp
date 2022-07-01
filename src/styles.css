@@ -2,17 +2,15 @@
   font-family: "EV";
   src: url("https://db.onlinewebfonts.com/t/03bd7255184e8e8ad4d2a521fa920b6c.ttf");
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 /*https://db.onlinewebfonts.com/t/67415ab41a7350f81536b69763e6d031.woff */
 
 .font {
-  font-family: EV;
+  font-family: 'EV', sans-serif;
 }
 
-.bg-glimpse-blue {
-  background: #202037;
-  border: 1.53077px solid rgba(255, 255, 255, 0.32);
-  border-radius: 10px;
-}
+
 
 .bg-yellow-g {
   background: #ffffff;
@@ -90,3 +88,21 @@
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
+
+.bg-glimpse {
+  background: #202037;
+  border: 1.53077px solid rgba(255, 255, 255, 0.32);
+  border-radius: 10px;
+}
+
+
+body {
+  background-image: url("");
+  background-color: #cccccc;
+  background-position: center center;
+  background-repeat: no-repeat, repeat;
+  position: relative;
+  background-attachment: fixed;
+  background-size: 430px;
+  z-index:-1
+ }

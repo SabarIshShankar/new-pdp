@@ -1,7 +1,6 @@
 import React from "react";
 
-
-export default function CustomModal({ children, visible, onClose }) {
+export default function InputModal({ children, visible, onClose }) {
   if (!visible) return null;
 
   const handleOnBackDropClick = (e) => {

@@ -23,7 +23,7 @@ function Discount() {
   return (
     <div>
       <button
-        className=" autolayout w-full p-2 my-4 bg-glimpse-blue content-center rounded-2xl spread-8 text-white flex"
+        className=" autolayout w-full p-2 my-4 bg-neutral-100 content-center rounded-2xl text-black flex border border-neutral-300"
         onClick={onClick}
       >
         <EyeOutlined />

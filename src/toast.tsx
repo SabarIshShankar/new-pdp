@@ -16,7 +16,7 @@ const Toast = () => {
 
   return (
     <div>
-      <button onClick={notifySuccess} className="w-full border p-2 rounded-lg bg-gray-200">Submit</button>
+      <button onClick={notifySuccess} className="w-full border p-2 rounded-lg bg-neutral-100">Submit</button>
       <ToastContainer />
     </div>
   );
