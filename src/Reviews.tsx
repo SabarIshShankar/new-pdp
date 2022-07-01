@@ -44,7 +44,7 @@ export default function Reviews() {
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
 
-                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-yellow-600">
+                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-orange-600">
                     <StarFilled />
                     <StarFilled />
                     <StarFilled />
@@ -66,7 +66,7 @@ export default function Reviews() {
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
 
-                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-yellow-600">
+                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-orange-600">
                     <StarFilled />
                     <StarFilled />
                     <StarFilled />
@@ -88,7 +88,7 @@ export default function Reviews() {
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
 
-                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-yellow-600">
+                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-orange-600">
                     <StarFilled />
                     <StarFilled />
                     <StarFilled />
@@ -110,7 +110,7 @@ export default function Reviews() {
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
 
-                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-yellow-600">
+                  <p className="mb-1 px-2 text-lg font-medium pr-2 flex text-orange-600">
                     <StarFilled />
                     <StarFilled />
                     <StarFilled />
