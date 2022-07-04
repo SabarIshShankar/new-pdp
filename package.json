@@ -15,8 +15,13 @@
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.0.0",
     "react-multi-carousel": "2.8.2",
+    "react-phone-number-input": "^3.2.3",
+    "react-spring": "^9.4.5",
     "react-toastify": "9.0.5",
     "react-toggle-display": "2.2.1",
+    "react-ui-animate": "^2.0.0",
+    "react-use-web-share": "^1.0.2",
+    "react-web-share": "^1.1.6",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
