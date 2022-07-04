@@ -23,11 +23,15 @@ function Discount() {
   return (
     <div>
       <button
-        className=" autolayout w-full p-2 my-4 bg-neutral-100 content-center rounded-2xl text-black flex border border-neutral-300"
+        className=" autolayout w-full flex justify-between spread-8 p-2 my-4 bg-neutral-100 content-center rounded-2xl text-black flex border border-neutral-300"
         onClick={onClick}
       >
-        <EyeOutlined />
+         <div className="bg-yellow-600 text-white rounded-3xl text-xs px-3 py-2">
+            Get 20% OFF
+          </div>
+          <div>
         <span className="px-1">Click to view discount code</span>
+        </div>
       </button>
       {showText ? <Text /> : null}
     </div>

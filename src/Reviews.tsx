@@ -30,7 +30,7 @@ export default function Reviews() {
   };
   return (
     <>
-      <div className="App">
+      <div className="App h-48">
         <Carousel
           responsive={responsive}
           minimumTouchDrag={50}
@@ -39,7 +39,7 @@ export default function Reviews() {
           infinite
         >
           <div className="tracking-tight m-1">
-            <div className="w-full mr-2">
+            <div className="w-full mr-2 h-48">
               <div className="border border-gray-200 rounded-2xl">
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
@@ -61,7 +61,7 @@ export default function Reviews() {
             </div>
           </div>
           <div className="tracking-tight m-1">
-            <div className="w-full mr-2">
+            <div className="w-full mr-2 h-48">
               <div className="border border-gray-200 rounded-2xl">
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
@@ -75,15 +75,14 @@ export default function Reviews() {
                   <div className="text-md px-2 text-gray-500 blue-navy py-2">
                     I absolutely love this blanket! At first, I was a little
                     skeptical because I didn’t want to spend a lot of money on a
-                    blanket, and I wasn’t sure if the bamboo would really keep
-                    me cool at night, but I’m glad I purchased!
+                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="tracking-tight m-1">
-            <div className="w-full mr-2">
+            <div className="w-full mr-2 h-48">
               <div className="border border-gray-200 rounded-2xl">
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
@@ -98,14 +97,14 @@ export default function Reviews() {
                     I absolutely love this blanket! At first, I was a little
                     skeptical because I didn’t want to spend a lot of money on a
                     blanket, and I wasn’t sure if the bamboo would really keep
-                    me cool at night, but I’m glad I purchased!
+                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="tracking-tight m-1">
-            <div className="w-full mr-2">
+            <div className="w-full mr-2 h-48">
               <div className="border border-gray-200 rounded-2xl">
                 <div className="mt-2">
                   <h1 className="mb-1 px-2 text-sm">Username</h1>
@@ -119,8 +118,7 @@ export default function Reviews() {
                   <div className="text-md px-2 text-gray-500 blue-navy py-2">
                     I absolutely love this blanket! At first, I was a little
                     skeptical because I didn’t want to spend a lot of money on a
-                    blanket, and I wasn’t sure if the bamboo would really keep
-                    me cool at night, but I’m glad I purchased!
+                    blanket, and 
                   </div>
                 </div>
               </div>

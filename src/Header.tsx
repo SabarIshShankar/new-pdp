@@ -5,6 +5,7 @@ import {
   ShareAltOutlined,
   RightOutlined
 } from "@ant-design/icons";
+import { RWebShare } from "react-web-share";
 
 export default function Header() {
   return (
@@ -16,7 +17,17 @@ export default function Header() {
             <HeartOutlined />
           </div>
           <div className="pl-3">
-            <ShareAltOutlined />
+          <RWebShare
+        data={{
+          text: "Share this Guest Experience",
+          url: "http://vip.tryglimpse.com/3189",
+          title: "GfG",
+        }}
+        onClick={() => console.log("shared successfully!")}
+      >
+        <button><ShareAltOutlined /></button>
+      </RWebShare>
+            
           </div>
         </div>
       </div>

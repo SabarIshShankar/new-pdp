@@ -9,14 +9,11 @@ import InputBreak from "./Break";
 import AboutBrand from "./About";
 import {
   ArrowDownOutlined,
-  ShoppingOutlined,
-  HeartOutlined,
   CloseOutlined,
+  ShoppingOutlined
 } from "@ant-design/icons";
-import { Button, Drawer } from "antd";
 import CustomModal from "./custom";
 import CTA from "./Cta";
-import { left } from "glamor";
 import BG from './bg'
 
 const App: React.FC = () => {
@@ -37,7 +34,6 @@ const App: React.FC = () => {
       <div className="max-w-2xl mx-auto py-5 px-4 sm:py-5u sm:px-0 lg:max-w-xl lg:px-8 ">
         {/*<div className="flex underlined mb-5 mt-2">
         <div className="text-sm">Home</div>
-        <span className="px-1">{">"} </span>
         <div className="text-sm">Product Name</div>
   </div>*/}
 
@@ -86,16 +82,16 @@ const App: React.FC = () => {
               </div>
             </Carousel>
             <div className="absolute py-2.5 w-fit top-0 inset-x-0  text-white text-xs text-center leading-4">
-              <div className="bg-yellow-600 mx-2 text-white rounded-full px-2 py-1">
+              <div className="bg-white mx-2 text-black rounded-full px-2 py-1">
                 BESTSELLER
               </div>
             </div>
           </div>
         </div>
-        <h1 className="text-xl py-2">Luxome Lightweight Blanket</h1>
+        <h1 className="text-lg py-2">Luxome Lightweight Blanket</h1>
 
         <div className="flex justify-between">
-          <div className="mb-1 text-xl font-medium flex">
+          <div className="mb-1 text-lg font-medium flex">
             $330.00
             <span className="line-through px-2 text-gray-500">$350.00</span>
           </div>
@@ -120,11 +116,16 @@ const App: React.FC = () => {
         </div>
 
         <div className="flex">
-          <div className="bg-yellow-600 text-white rounded-full text-xs px-3 py-2">
-            20% OFF
-          </div>
+         
         </div>
         <Discount />
+        <button
+            type="button"
+            className="w-full px-2 text-sm mb-5 bg-slate-900 text-white flex items-center justify-center h-12 rounded-2xl bg-glimpse outline-none focus:outline-none"
+          >
+            <span className="">Buy on website</span>
+            <ShoppingOutlined />
+          </button>
         {/*<h1 className="text-lg text-gray-500 py-2">OFFERS</h1>
 
         <div className="flex justify-between items-center">
@@ -152,18 +153,18 @@ const App: React.FC = () => {
 
         <h1 className="text-lg text-gray-500 py-2">Description</h1>
 
-        <p className="text-sm pt-2 text-gray-500">
+        <div className="text-sm pt-2 text-gray-500">
           With a thinner profile than a traditional comforter, this perfectly
           soft & breathable quilted blanket will keep you comfortable all year
           round. The naturally thermal-regulating bamboo viscose fabric and fill
           is perfect for hot sleepers, while still providing adequate warmth in
           the cooler months.
           <div className="flex">
-            <button className="" onClick={() => setShowModal(true)}>
+            <button className="text-black" onClick={() => setShowModal(true)}>
               Read more
             </button>
           </div>
-        </p>
+        </div>
 
         <div
           style={{
@@ -237,7 +238,6 @@ A healthier choice for your home and the environment: organic cotton uses up to 
 
         <AboutBrand />
 
-        <Header />
         <div className="flex p-2 autolayout">
           {" "}
           <ArrowDownOutlined /> <p className="s"></p>Get yours before time runs
@@ -245,12 +245,7 @@ A healthier choice for your home and the environment: organic cotton uses up to 
         </div>
         <div className="bg-white App mb-24 shadow-t">
           <CTA />
-          <button
-            className="bg-blue-500 py-2 px-5 bg-blue-500 text-white"
-            onClick={showDrawer}
-          >
-            Read more 1
-          </button>
+          
 
           <CustomModal visible={showModal} onClose={() => setShowModal(false)}>
             <div className="bg-white w-full p-5 rounded-2xl-top fixed-modal max-w-2xl mx-auto py-5 px-5 sm:py-5 sm:px-3 lg:max-w-3xl lg:px-8">
