@@ -31,6 +31,7 @@
   align-items: center;
 }
 
+
 .fixed1 {
   position: fixed;
   height: 70px;
@@ -161,3 +162,17 @@ body {
     transform: scale3d(1, 1, 1);
  }
 }
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
