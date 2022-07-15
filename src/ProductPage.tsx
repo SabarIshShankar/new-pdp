@@ -123,7 +123,7 @@ const ProductPage: React.FC = () => {
             type="button"
             className="w-full px-2 text-sm mb-5 bg-slate-900 text-white flex items-center justify-center h-12 rounded-2xl bg-glimpse outline-none focus:outline-none"
           >
-            <span className="">Buy on website</span>
+            <span className="px-2">BUY ON WEBSITE</span>
             <ShoppingOutlined />
           </button>
         {/*<h1 className="text-lg text-gray-500 py-2">OFFERS</h1>
