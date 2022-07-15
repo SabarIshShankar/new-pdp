@@ -12,7 +12,7 @@ const responsive = {
   },
   Lg: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 2.3,
+    items: 2,
   },
   Md: {
     breakpoint: { max: 1024, min: 464 },
